@@ -1,0 +1,5 @@
+<div mat-dialog-content class="custom-dialog-content "> {{message}} </div>
+<div mat-dialog-actions class="custom-dialog-actions">
+    <button mat-raised-button color="primary" (click)="onClickNO()" class="btns">Inicio</button>
+    <button mat-raised-button color="primary" [mat-dialog-close]="true" class="btns">Volver a Jugar</button>
+</div>

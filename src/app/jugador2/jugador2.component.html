@@ -1,0 +1,19 @@
+<div class="bodyPlayer1">
+    <div class="namePlayer">
+        <img src="../../assets/img/yoshi.png" width="45%">
+        <p class="msg">Nombre del jugador #2</p>
+        <mat-form-field class="ancho" appearance="fill">
+            <mat-label>Jugador 2</mat-label>
+            <input #jugador2 matInput autocomplete="off">
+        </mat-form-field>
+        <br>
+        <div class="button-container">
+            <button class="btns" mat-raised-button color="primary"
+                (click)="toGame(jugador2.value)">Continuar</button>
+            <button class="btns" mat-raised-button color="primary" (click)="backPlayer1()">Atrás</button>
+        </div>
+
+    </div>
+
+</div>
+

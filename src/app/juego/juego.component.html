@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="generateNumber">
+    <button [disabled]=ableRandom  class="btns" mat-raised-button color="primary" (click)="generateRandom()">Generar número aleatorio</button>
+        <h5>{{msgRandom}}</h5>
+    </div>
+
+
+<div class="player1">
+
+    <h3> Jugador #1 </h3>
+    <p>{{namePlayer1}}</p>
+
+    <mat-form-field  class="ancho" appearance="fill">
+        <mat-label>Número entre 1-50</mat-label>
+        <input type="number" #numero [disabled]=ablePlayer1 required [(ngModel)]="value1" matInput autocomplete="off">
+    </mat-form-field>
+
+    <button type="submit" class="mat-raised-button" mat-raised-button color="primary" (click)="verificar1(numero.value)"
+        [disabled]=ablePlayer1>Verificar</button>
+
+    <p *ngIf="mostrarP1">
+        {{mensaje1}}. <br>
+        Intentos restantes: {{nTryPlayer1}}
+    </p>
+
+</div>
+
+<div class="player2">
+
+    <h3> Jugador #2 </h3>
+    <p>{{namePlayer2}}</p>
+
+    <mat-form-field class="ancho" appearance="fill">
+        <mat-label>Número entre 1-50</mat-label>
+        <input type="number" #numero1 [disabled]=ablePlayer2 required [(ngModel)]="value2" matInput autocomplete="off">
+    </mat-form-field>
+
+    <button type="submit" class="mat-raised-button" mat-raised-button color="primary" (click)="verificar2(numero1.value)"
+        [disabled]=ablePlayer2>Verificar</button>
+
+    <p *ngIf="mostrarP2">
+        {{mensaje2}}. <br>
+        Intentos restantes: {{nTryPlayer2}}
+    </p>
+
+</div>
+
+
+
+<div class="restart">
+
+    <br><br><br>
+    <p *ngIf="finalMsg()">{{msgResult}}</p>
+     <button class="mat-raised-button" mat-raised-button color="primary" (click)="openDialog()">Reiniciar</button>
+
+</div>
+
+</div>
+

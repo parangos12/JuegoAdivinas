@@ -1,0 +1,33 @@
+/* styles.css */
+.custom-dialog-content {
+    font-size: 24px;
+    /* Tamaño de fuente más grande */
+    text-align: center;
+    /* Centrar el texto */
+}
+
+.custom-dialog {
+    max-width: 10px;
+    /* Aumenta el ancho del Dialog */
+}
+
+.custom-dialog-actions {
+    display: flex;
+    /* Espacio uniforme entre botones */
+    align-items: center;
+    width: 80%;
+    margin-left: 99px;
+}
+
+.btns {
+    font-size: 22px;
+    /* Tamaño de fuente de botones más grande */
+    margin: 5px;
+    /* Espacio entre botones */
+
+}
+
+.custom-button {
+    font-size: 14px;
+    /* Tamaño de fuente de botones personalizado */
+}

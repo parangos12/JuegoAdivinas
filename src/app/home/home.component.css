@@ -1,0 +1,114 @@
+.container {
+display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.7fr 1.3fr;
+    gap: 0% 0px;
+    grid-template-areas:
+        "welcomeImg howToPlay"
+        "welcomeImg Instructions";
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.welcomeImg {
+    justify-self: center;
+    align-self: center;
+    grid-area: welcomeImg;
+    width: 92%;
+}
+
+.welcomeImg {
+    justify-self: center;
+    align-self: center;
+    grid-area: welcomeImg;
+    width: 92%;
+}
+.btns {
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    justify-content: space-between;
+}
+
+.btns:hover{
+    background-color: #de311e;
+        /* Color de fondo al pasar el mouse */
+        box-shadow: 0px 0px 10px rgb(15, 15, 15);
+        /* Sombra */
+        transition: 0.8s;
+        /* Transición */
+}
+
+.howToPlay {
+    justify-self: center;
+    align-self: center;
+    grid-area: howToPlay;
+    width: 85%;
+    height:75%;
+    text-align: left;
+    font-family: Comic Sans MS;
+    font-weight: 700;
+    font-size: 300%;
+    color: #ebd758;
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68, 6px 6px #414D68, 7px 7px #414D68, 8px 8px #414D68, 9px 9px #414D68;
+}
+
+.howToPlay p{
+    font-size: 100%;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.howToPlay h1{
+    font-size: calc(1.375rem + 1.5vw);
+}
+
+.Instructions {
+    justify-self: start;
+    align-self: start;
+    grid-area: Instructions;
+    width: 85%;
+    height: 60%;
+        display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    height: 40vh; /* Esto es opcional, ajusta la altura según tus necesidades */
+
+}
+
+.howToPlay:hover {
+transform: scale(1.3);
+}
+
+/* Estilo para las instrucciones del juego */
+.Instructions {
+    font-family: 'Arial', sans-serif;
+    /* Fuente */
+    font-size: 24px;
+    /* Tamaño de fuente */
+    font-weight: bold;
+    /* Peso de fuente en negrita */
+    color: #1e1e1d;
+    /* Color de texto azul */
+    text-align: justify;
+    /* Alineación al centro */
+    margin-bottom: 20px;
+    /* Espaciado inferior */
+    text-shadow: 1px 1px 1px rgba(21, 21, 20, 0.5);
+    /* Sombra de texto suave */
+    padding: 10px;
+    /* Espaciado interno */
+    background-color: #5da1bd00;
+    /* Color de fondo gris claro */
+    /* Borde azul alrededor del cuadro de texto */
+    border-radius: 10px;
+    /* Borde redondeado */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.683);
+    /* Efecto de sombra en el cuadro */
+}
+

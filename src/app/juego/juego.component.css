@@ -1,0 +1,222 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0% 0px;
+    grid-auto-flow: row;
+    justify-content: center;
+    justify-items: center;
+    grid-template-areas:
+        "generateNumber generateNumber"
+        "player1 player2"
+        "restart restart";
+    width: 100%;
+    height: 100%;
+}
+
+.player1 {
+    grid-area: player1;
+    width: 80%;
+    display: flex;
+        flex-direction: column;
+        /* Colocar elementos en columna */
+        align-items: center;
+        /* Centrar elementos horizontalmente */
+        text-align: center;
+        /* Centrar el texto horizontalmente */
+    border-radius: 10px;
+        /* Borde redondeado */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.617);
+        /* Sombra */
+        padding: 20px;
+        /* Espaciado interno */
+        margin-top: 49px;
+}
+
+.mat-form-field,
+.mat-form-field-wrapper,
+input[type="number"],
+.mat-raised-button {
+    display: block;
+    margin: 0 auto;
+    /* Centra horizontalmente */
+}
+
+.player1 h3 {
+    font-size: 40px;
+    /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+.player1 p {
+    font-size: 130%;
+    font-weight: 700;
+    /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+.player1 .mat-raised-button {
+    font-size: 27px;
+    /* Ajusta el tamaño de fuente del botón según tus preferencias */
+    margin-top: 1px;
+    /* Espacio entre el mat-input y el botón */
+    width: 170px;
+    height: 37px;
+}
+
+.player1:hover{
+    background-color: #e8cced;
+    /* Color de fondo al pasar el mouse */
+    box-shadow: 0px 0px 10px rgb(15, 15, 15);
+    /* Sombra */
+    transition: 0.8s;
+    /* Transición */
+}
+
+
+.player1 .ancho {
+    font-size: 22px;
+    /* Ajusta el tamaño de fuente del botón según tus preferencias */
+    margin-top: 1px;
+    /* Espacio entre el mat-input y el botón */
+    width: 250px;
+    height: 70px;
+}
+
+.player2 {
+    grid-area: player2;
+    width: 80%;
+    display: flex;
+        flex-direction: column;
+        /* Colocar elementos en columna */
+        align-items: center;
+        /* Centrar elementos horizontalmente */
+        text-align: center;
+        /* Centrar el texto horizontalmente */
+    border-radius: 10px;
+        /* Borde redondeado */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.617);
+        /* Sombra */
+        padding: 20px;
+        /* Espaciado interno */
+        margin-top: 49px;
+        }
+
+
+.mat-form-field,
+.mat-form-field-wrapper,
+input[type="number"],
+.mat-raised-button {
+    display: block;
+    margin: 0 auto;
+    /* Centra horizontalmente */
+}
+
+.player2 h3 {
+    font-size: 40px;
+    /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+.player2 p {
+    font-size: 130%;
+    font-weight: 700;
+    /* Ajusta el tamaño de fuente según tus preferencias */
+}
+
+.player2 .mat-raised-button {
+    font-size: 27px;
+    /* Ajusta el tamaño de fuente del botón según tus preferencias */
+    margin-top: 1px;
+    /* Espacio entre el mat-input y el botón */
+    width: 170px;
+    height: 37px;
+}
+
+.player2:hover{
+    background-color: #e8cced;
+    /* Color de fondo al pasar el mouse */
+    box-shadow: 0px 0px 10px rgb(15, 15, 15);
+    /* Sombra */
+    transition: 0.8s;
+    /* Transición */
+}
+
+.player2 .ancho {
+    font-size: 22px;
+    /* Ajusta el tamaño de fuente del botón según tus preferencias */
+    margin-top: 1px;
+    /* Espacio entre el mat-input y el botón */
+    width: 250px;
+    height: 70px;
+}
+
+
+.generateNumber{
+    justify-self: center;
+    align-self: center;
+    grid-area: generateNumber;
+    height: 40%;
+    height: 50px;
+    font-size: 50px;
+}
+
+.generateNumber .btns {
+    font-size: 35px;
+    width: 600px;
+    height: 50px;
+        justify-self: center;
+            align-self: center;
+            grid-area: generateNumber;
+            text-align: center;
+            align-items: center;
+            /* Centrar el texto horizontalmente */
+            border-radius: 10px;
+            /* Borde redondeado */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.617);
+}
+
+.generateNumber .btns:hover{
+    background-color: #de311e;
+        /* Color de fondo al pasar el mouse */
+        box-shadow: 0px 0px 10px rgb(15, 15, 15);
+        /* Sombra */
+        transition: 0.8s;
+        /* Transición */
+}
+
+.generateNumber .btns {
+    font-size: 35px;
+    width: 600px;
+    height: 50px;
+    margin: 0 auto;
+    align-items: center;
+    /* Centrar horizontalmente el botón */
+}
+
+.generateNumber h5 {
+    font-size: 24px;
+    /* Tamaño de fuente para el mensaje */
+    margin-top: 10px;
+    /* Espacio superior entre el botón y el mensaje */
+    padding-left: 180px;
+}
+.restart {
+    grid-area: restart;
+    height: 50%;
+}
+.restart .mat-raised-button {
+    font-size: 30px;
+    /* Ajusta el tamaño de fuente del botón según tus preferencias */
+    margin-top: -45px;
+    /* Espacio entre el mat-input y el botón */
+    width: 200px;
+    height: 50px;
+}
+
+.restart .mat-raised-button:hover{
+    background-color: #de311e;
+        /* Color de fondo al pasar el mouse */
+        box-shadow: 0px 0px 10px rgb(15, 15, 15);
+        /* Sombra */
+        transition: 0.8s;
+        /* Transición */
+}

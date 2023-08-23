@@ -1,0 +1,19 @@
+<div class="bodyPlayer1">
+    <div class="namePlayer">
+        <img src="../../assets/img/bowser.png" width="89%">
+<p class="msg">Nombre del jugador #1</p>
+        <mat-form-field class="ancho" appearance="fill">
+            <mat-label >Jugador 1</mat-label>
+            <input #jugador1 matInput autocomplete="off">
+        </mat-form-field>
+        <br>
+        <div class="button-container">
+            <button class="btns" mat-raised-button color="primary" (click)="toPlayer2(jugador1.value)">Continuar</button>
+            <button class="btns" mat-raised-button color="primary" (click)="toHome()">Inicio</button>
+        </div>
+
+
+    </div>
+    
+</div>
+

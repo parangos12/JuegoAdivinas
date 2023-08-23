@@ -1,0 +1,25 @@
+<div class="container">
+
+<div class="lottie-animation mt-10 welcomeImg" >
+    <ng-lottie [options]="options" (animationCreated)="onAnimate($event)">
+    </ng-lottie>
+</div>
+
+<div class="howToPlay">
+    <p>¡Adivina!</p>
+    <h1>¿Cómo se juega?</h1>
+</div>
+<div class="Instructions">
+    <ol>
+        <li>Adivina es un juego para 2 personas que consiste en adivinar un número.</li>
+        <li>La primera persona que logre adivinar el número gana.</li>
+        <li>Cada uno tendrá 3 oportunidades para adivinar el número.</li>
+    </ol>
+    <button class="btns" mat-raised-button color="primary" (click)="start()">Empezar</button>
+
+</div>
+
+</div>
+
+
+
